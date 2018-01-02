@@ -2,7 +2,7 @@
   "name": "portfolio-site",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "Andrew Mead",
+  "author": "Mehabub SHeikh",
   "license": "MIT",
   "scripts": {
     "serve": "live-server public/",
