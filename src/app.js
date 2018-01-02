@@ -14,39 +14,6 @@ const store = configureStore();
 // store.subscribe(() =>{
 //   console.log(store.getState());
 // });
-console.log('Testing');
-const memberOne = store.dispatch(addMember({
-  firstName:'Mehabub',
-  lastName:'Sheikh',
-  profession:'IT Professional',
-  dob:198080
-}));
-
-const memberTwo =store.dispatch(addMember({
-  firstName:'Farhan',
-  lastName:'Sheikh',
-  profession:'Student',
-  dob:198080000
-}));
-
-const newadd1 ={
-  memberId:memberOne.member.id,
-  addressType:'HOME',
-  addressLine1:'6 Colonial Parkway Apt#1',
-  addressLine2:'',
-  city:'Pittsford',
-  state:'NY',
-  zip:'14534'
-}
-store.dispatch(addAddress({
-  memberId:memberOne.member.id,
-  addressType:'HOME',
-  addressLine1:'6 Colonial Parkway Apt#1',
-  addressLine2:'',
-  city:'Pittsford',
-  state:'NY',
-  zip:'14534'
-}));
 
 const jsx = (
   <Provider store ={store}>
